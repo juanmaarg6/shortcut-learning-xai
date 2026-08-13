@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw and processed data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model artifacts / checkpoints
+artifacts/*
+!artifacts/.gitkeep
+
+# Ignore full experiment output by default
+results/*
+
+# Keep only compact final metric summaries
+!results/metrics/
+results/metrics/*
+
+!results/metrics/erm/
+results/metrics/erm/*
+!results/metrics/erm/test_seed_summary.csv
+!results/metrics/erm/test_aggregate.csv
+
+!results/metrics/group_balanced/
+results/metrics/group_balanced/*
+!results/metrics/group_balanced/test_seed_summary.csv
+!results/metrics/group_balanced/test_aggregate.csv
+
+!results/metrics/comparison/
+results/metrics/comparison/*
+!results/metrics/comparison/method_summary.csv
+!results/metrics/comparison/paired_seed_deltas.csv
+!results/metrics/comparison/paired_delta_summary.csv
+
+# Ignore generated figures except the curated portfolio set
+reports/figures/*
+!reports/figures/portfolio/
+reports/figures/portfolio/*
+!reports/figures/portfolio/*.png
