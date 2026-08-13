@@ -1,5 +1,8 @@
 # Right for the Wrong Reasons: Shortcut Learning and Explainability in Image Classification
 
+[![CI](https://github.com/juanmaarg6/shortcut-learning-xai/actions/workflows/ci.yml/badge.svg)](https://github.com/juanmaarg6/shortcut-learning-xai/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Can an image classifier achieve strong test accuracy while relying on the wrong visual cues?
 
 This project studies **shortcut learning** on the Waterbirds dataset using a pretrained ResNet-50. The main goal is not to maximize headline accuracy, but to measure how much performance depends on a spurious correlation between **bird type** and **background**, test whether a simple group-balanced intervention reduces that dependence, and inspect representative predictions with **Grad-CAM**.
